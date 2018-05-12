@@ -29,13 +29,15 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
 	}
 	else if (command === '8ball') {
-		msg.channel.send(random.select('8ball')); {
+		msg.channel.send(random.select('8ball')); 
 		if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("You need to ask a question!"); {
+				msg.channel.send("You need to ask a question!"); 
 				return;
 			} else {
-				msg.channel.send(random.select('8ball'); {
+				msg.channel.send(random.select('8ball');
+						 }
+						 }
 	}
 	else {
 		return;
