@@ -15,7 +15,7 @@ client.on('message', msg => {
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
   
-  if (command === ping) {
+  if (command === 'ping') {
     msg.channel.send('Pong!');
   }
   
