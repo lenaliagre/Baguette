@@ -37,10 +37,6 @@ client.on('message', msg => {
 		}
 	}
 }
-	}
-	else if (command === 'facepalm') {
-		msg.command.send(random.select('facepalm'));
-	}	
 	else {
 		return;
 	}
