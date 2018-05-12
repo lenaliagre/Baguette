@@ -37,6 +37,9 @@ client.on('message', msg => {
 		}
 	}
 }
+	else if (command === 'facepalm') {
+		msg.channel.send(random.select('facepalm'));
+	}
 	else {
 		return;
 	}
