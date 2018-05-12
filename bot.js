@@ -36,6 +36,7 @@ client.on('message', msg => {
 			msg.channel.send(random.select('8ball'));
 		}
 	}
+}
 	else {
 		return;
 	}
