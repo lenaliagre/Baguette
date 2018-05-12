@@ -39,8 +39,6 @@ client.on('message', msg => {
 						 }
 						 }
 	}
-	else if (command === 'help') {
-	}
 	else {
 		return;
 	}
