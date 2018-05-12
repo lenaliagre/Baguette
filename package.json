@@ -1,0 +1,11 @@
+{
+	"name": "BaguetteBaker",
+	"version": "1.0.0",
+	"description": "FrenchBread",
+	"main": "bot.js",
+	"author": "Lena",
+	"dependencies": {
+		"discord.js": "^11.3.2",
+		"npm": "^6.0.0"
+	}
+}
