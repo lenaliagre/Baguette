@@ -26,7 +26,10 @@ client.on('message', msg => {
 		msg.channel.send(random.select('randomlenny'));
 	}
 	else if (command === 'duckymomo') {
-		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});		
+		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
+	}
+	else if (command === 'help') {
+		msg.channel.send(select('botcmdlist'));
 	}
 	else {
 		return;
