@@ -36,12 +36,12 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send(random.select('8ball');
-						 }
-						 }
+			 }
+		 }
 	}
 	else {
 		return;
 	}
 });
 
-client.login(process.env.token);  
+client.login(process.env.token);
