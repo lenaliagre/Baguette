@@ -36,8 +36,10 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send(random.select('8ball');
-			 }
-		 }
+						 }
+						 }
+	}
+	else if (command === 'help') {
 	}
 	else {
 		return;
