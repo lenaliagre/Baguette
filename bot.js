@@ -36,16 +36,6 @@ client.on('message', msg => {
 			msg.channel.send(random.select('8ball'));
 		}
 	}
-	module.exports = (self) => {
-  self.registerCommand('purge', function (msg, args) {
-    if (!args[0] || !/\d{1,2}/ig.test(args[0])) return this.send(msg, 'Please specify the number of messages to delete.')
-    msg.channel.getMessages(200).then(msgs => {
-      let msgArray = msgs.filter(m => m.author.id === this.self.user.id).filter(m => m !== msgs[0])
-      msgArray.length = parseInt(args[0], 10)
-      msgArray.map(m => m.delete().catch(err => this.log.err(err)))
-    })
-  })
-}
 	else {
 		return;
 	}
