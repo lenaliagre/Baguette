@@ -19,7 +19,7 @@ client.on('message', msg => {
     msg.channel.send('Pong!');
   }
   else if (command === 'sweet') {
-	  msg.channel.send('https://img2.bibamagazine.fr/var/bibamagazine/storage/images/1/3/2/2/1322547/un-musee-bonbon-voir-jour-new-york_width1024.jpg');
+	  msg.channel.send("", {file:https://img2.bibamagazine.fr/var/bibamagazine/storage/images/1/3/2/2/1322547/un-musee-bonbon-voir-jour-new-york_width1024.jpg"});
   }
   else {
     return;
