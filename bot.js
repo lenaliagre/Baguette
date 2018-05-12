@@ -38,7 +38,7 @@ client.on('message', msg => {
 	}
 }
 	}
-	else if (command === '8ball') {
+	else if (command === 'facepalm') {
 		msg.command.send(random.select('facepalm'));
 	}	
 	else {
