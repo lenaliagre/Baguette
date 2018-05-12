@@ -23,7 +23,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://img2.bibamagazine.fr/var/bibamagazine/storage/images/1/3/2/2/1322547/un-musee-bonbon-voir-jour-new-york_width1024.jpg"});
 	}
 	else if (command === 'lenny') {
-		msg.channel.send(random.select(randomlenny));
+		msg.channel.send(random.select('randomlenny'));
 	}
 	else {
 		return;
