@@ -52,6 +52,9 @@ client.on('message', msg => {
 	else if (command === 'hug') {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/87/b5/50/87b55088247f99d5766ef6179ecdcceb.gif"});
 	}
+	else if (command === 'gif') {
+		msg.channel.send(random.select('gif'));
+	}
 	else if (command === 'coffee') {
 		msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"});
 	}
