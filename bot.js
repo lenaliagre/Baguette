@@ -35,6 +35,9 @@ client.on('message', msg => {
 	else if (command === 'eat') {
 		msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
 	}
+	else if (command === 'punda') {
+		msg.channel.send('Best teacher ever! - https://i.pinimg.com/originals/b8/44/51/b844518e4262f54396470be38f183aae.gif');
+	}
 	else if (command === 'drink') {
 		 msg.channel.send("", {file:"https://nerdramblesblog.files.wordpress.com/2017/01/tumblr_inline_nrul77ouju1szu3bc_500.gif"});
 	}
