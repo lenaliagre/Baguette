@@ -3,6 +3,8 @@ const config = require("./config.json");
 const random = require("./random.js");
 const Music = require('discord.js-musicbot-addon');
 
+require('events').EventEmitter.defaultMaxListeners = Infinity;
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
