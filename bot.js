@@ -32,7 +32,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif"});
 	}
 	else if (command === 'facepalm') {
-		msg.channel.send("", {file:"http://66.media.tumblr.com/329ddf49540793d761f327e3100178a1/tumblr_nxq7dpRdja1uibrtpo1_400.gif"});
+		msg.channel.send(random.select('facepalm'));
 	}
 	else if (command === 'shrug') {
 		msg.channel.send('¯\\_(ツ)_/¯');
@@ -57,9 +57,6 @@ client.on('message', msg => {
 	}
 	else if (command === 'colesprouse') {
 		msg.channel.send(random.select('colesprouse'));
-	}
-	else if (command === 'gif') {
-		msg.channel.send(random.select('gif'));
 	}
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
