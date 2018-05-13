@@ -19,6 +19,37 @@ client.on('message', msg => {
 	if (command === 'ping') {
 		msg.channel.send('Pong!');
 	}
+	if (pref === config.prefix) {
+        if (command === 'enable') {
+            if (botstatus === false) {
+                botstatus = true;
+                msg.channel.send(':white_check_mark: Baguette-tastic is now **ENABLED**');
+            } else if (botstatus === true) {
+                msg.channel.send(':white_check_mark: Baguette-tastic is already **ENABLED**');
+            } else {
+                return;
+            }
+        } else if (command === 'disable') {
+            if (botstatus === true) {
+                botstatus = false;
+                msg.channel.send(':x: Baguette-tastic is now **DISABLED**');
+            } else if (botstatus === false) {
+                msg.channel.send(':x: Baguette-tastic is already **DISABLED**');
+            } else {
+                return;
+            }
+        } else if (command === 'status') {
+            if (botstatus === true) {
+                msg.channel.send('Baguette-tastic is currently: **ENABLED**');
+            } else if (botstatus === false) {
+                msg.channel.send('Baguette-tastic is currently: **DISABLED**');
+            } else {
+                return;
+            }
+        } else {
+            return;
+        }
+	}
 	else if (command === 'sweet') {
 		msg.channel.send("", {file:"https://img2.bibamagazine.fr/var/bibamagazine/storage/images/1/3/2/2/1322547/un-musee-bonbon-voir-jour-new-york_width1024.jpg"});
 	}
