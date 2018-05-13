@@ -29,10 +29,10 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
 	}
 	else if (command === 'facedesk') {
-		msg.command.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif?itemid=5015289"});
+		msg.channel.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif?itemid=5015289"});
 	}
 	else if (command === 'facepalm') {
-		msg.command.send("", {file:"http://66.media.tumblr.com/329ddf49540793d761f327e3100178a1/tumblr_nxq7dpRdja1uibrtpo1_400.gif"});
+		msg.channel.send("", {file:"http://66.media.tumblr.com/329ddf49540793d761f327e3100178a1/tumblr_nxq7dpRdja1uibrtpo1_400.gif"});
 	}
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
