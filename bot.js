@@ -19,8 +19,7 @@ client.on('message', msg => {
 	if (command === 'ping') {
 		msg.channel.send('Pong!');
 	}
-	if (pref === config.prefix) {
-        if (command === 'enable') {
+	if (command === 'enable') {
             if (botstatus === false) {
                 botstatus = true;
                 msg.channel.send('Baguette-tastic is now ENABLED');
