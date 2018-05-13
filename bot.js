@@ -3,14 +3,6 @@ const config = require("./config.json");
 const random = require("./random.js");
 const Music = require('discord.js-musicbot-addon');
 
-require('events').EventEmitter.defaultMaxListeners = Infinity;
-
-const music = new Music(client, {youtubeKey: process.env.ytkey,
-    prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', deVolume: 100, anyoneCanSkip: true, messageHelp: true,
-    botOwner: '363749294362066945', helpCmd: 'assist', playCmd: 'play',    skipCmd: 'skip', queueCmd: 'queue', pauseCmd:  'pause', 
-	resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set', loopCmd: 'loop', searchCmd: 'search', 
-	ownerCmd: 'owner', enableQueueStat: true});
-
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -23,21 +15,6 @@ client.on('message', msg => {
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
   
-	
-	DefaultVolume = 0.25
-	SkipsRequired = 4
-	SkipRatio = 0.5
-	WhiteListCheck = no
-	NowPlayingMentions = no
-	SaveVideos = yes
-	AutoSummon = yes
-	AutoPause = yes
-	DeleteMessages = no
-	DeleteInvoking = no
-	PersistentQueue = yes
-	DebugLevel = INFO
-	
-	
 	if (command === 'ping') {
 		msg.channel.send('Pong!');
 	}
