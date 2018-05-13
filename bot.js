@@ -23,26 +23,26 @@ client.on('message', msg => {
         if (command === 'enable') {
             if (botstatus === false) {
                 botstatus = true;
-                msg.channel.send(':white_check_mark: Baguette-tastic is now **ENABLED**');
+                msg.channel.send('Baguette-tastic is now ENABLED');
             } else if (botstatus === true) {
-                msg.channel.send(':white_check_mark: Baguette-tastic is already **ENABLED**');
+                msg.channel.send('Baguette-tastic is already ENABLED');
             } else {
                 return;
             }
         } else if (command === 'disable') {
             if (botstatus === true) {
                 botstatus = false;
-                msg.channel.send(':x: Baguette-tastic is now **DISABLED**');
+                msg.channel.send(':x: Baguette-tastic is now DISABLED');
             } else if (botstatus === false) {
-                msg.channel.send(':x: Baguette-tastic is already **DISABLED**');
+                msg.channel.send(':x: Baguette-tastic is already DISABLED');
             } else {
                 return;
             }
         } else if (command === 'status') {
             if (botstatus === true) {
-                msg.channel.send('Baguette-tastic is currently: **ENABLED**');
+                msg.channel.send('Baguette-tastic is currently: ENABLED');
             } else if (botstatus === false) {
-                msg.channel.send('Baguette-tastic is currently: **DISABLED**');
+                msg.channel.send('Baguette-tastic is currently: DISABLED');
             } else {
                 return;
             }
