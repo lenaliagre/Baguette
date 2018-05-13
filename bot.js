@@ -28,6 +28,9 @@ client.on('message', msg => {
 	else if (command === 'eat') {
 		msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
 	}
+	else if (command === 'drink') {
+		 msg.channel.send("", {file:"https://nerdramblesblog.files.wordpress.com/2017/01/tumblr_inline_nrul77ouju1szu3bc_500.gif"});
+	}
 	else if (command === 'duckymomo') {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
 	}
