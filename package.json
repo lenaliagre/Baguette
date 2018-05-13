@@ -6,13 +6,13 @@
 	"author": "Lena",
 	"dependencies": {
 		"bufferutil": "^3.0.3",
-        "discord.js": "^11.3.2",
-        "discord.js-musicbot-addon": "^1.10.3",
-        "erlpack": "github:discordapp/erlpack",
-        "ffmpeg-binaries": "^3.2.2-3",
-        "libsodium-wrappers": "^0.7.3",
-        "node-opus": "^0.2.7",
-        "npm": "^6.0.0",
-        "opusscript": "0.0.6"
+        	"discord.js": "^11.3.2",
+        	"discord.js-musicbot-addon": "^1.10.3",
+        	"erlpack": "github:discordapp/erlpack",
+        	"ffmpeg-binaries": "^3.2.2-3",
+        	"libsodium-wrappers": "^0.7.3",
+        	"node-opus": "^0.2.7",
+        	"npm": "^6.0.0",
+        	"opusscript": "0.0.6"
 	}
 }
