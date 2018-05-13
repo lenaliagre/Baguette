@@ -67,6 +67,8 @@ client.on('message', msg => {
 	else if (command === 'colesprouse') {
 		msg.channel.send(random.select('colesprouse'));
 	}
+	else if (command === 'help') {
+		msg.channel.send('Command list: 8ball, colesprouse, drink, duckymomo, eat, facedesk, facepalm, coffee, cuddle, gif, help, hug, lenny, ping, shrug, slap, stab, tableflip, tea'
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send("You need to ask a question!");
