@@ -53,7 +53,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 	}
 	else if (command === 'colesprouse') 
-		msg.channel.send(random.select('colesprouse'))
+		msg.channel.send(random.select('colesprouse'));
 	}
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
