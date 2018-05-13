@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const config = require("./config.json");
 const random = require("./random.js");
-const Music = require('discord.js-musicbot-addon');
 
 require('events').EventEmitter.defaultMaxListeners = Infinity;
 
