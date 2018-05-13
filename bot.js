@@ -33,7 +33,7 @@ client.on('message', msg => {
 			msg.channel.send("You need to ask a question!");
 			return;
     	} else {
-        	msg.channel.send(random.select('8ball');
+        	msg.channel.send(random.select('8ball'));
     	}
 	}
 	else {
