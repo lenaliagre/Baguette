@@ -35,7 +35,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"http://66.media.tumblr.com/329ddf49540793d761f327e3100178a1/tumblr_nxq7dpRdja1uibrtpo1_400.gif"});
 	}
 	else if (command === 'shrug') {
-		msg.channel.send('¯\_(ツ)_/¯');
+		msg.channel.send('¯\\_(ツ)_/¯');
 	}
 	else if (command === 'tableflip') {
 		msg.channel.send("", {file:"https://i.imgur.com/4lCNxmh.gif"});
