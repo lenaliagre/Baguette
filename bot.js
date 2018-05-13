@@ -17,14 +17,6 @@ client.on('message', msg => {
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
   
-	require('events').EventEmitter.defaultMaxListeners = Infinity;
-
-const music = new Music(client, {youtubeKey: process.env.ytkey, //Youtube Dev API3 Key
-    prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', deVolume: 100, anyoneCanSkip: true, messageHelp: true,
-    botOwner: '445174975306006529', helpCmd: 'assist', playCmd: 'play',    skipCmd: 'skip', queueCmd: 'queue', pauseCmd:  'pause', 
-	resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set', loopCmd: 'loop', searchCmd: 'search', 
-	ownerCmd: 'owner', enableQueueStat: true});
-	
 	if (command === 'ping') {
 		msg.channel.send('Pong!');
 	}
