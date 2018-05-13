@@ -50,7 +50,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 	}
 	else if (command === 'colesprouse') 
-		msg.channel.send("", {file:"https://ugc.reveliststatic.com/gen/full/2017/08/23/17/8w/zv/ph3v4myf402qbwe.gif"});
+		msg.channel.send(random.select('colesprouse'));
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send("You need to ask a question!");
