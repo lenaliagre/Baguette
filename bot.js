@@ -49,6 +49,8 @@ client.on('message', msg => {
 	else if (command === 'cuddle') {
 		msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 	}
+	else if (command === 'colesprouse') 
+		msg.channel.send("", {file:"https://ugc.reveliststatic.com/gen/full/2017/08/23/17/8w/zv/ph3v4myf402qbwe.gif"});
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send("You need to ask a question!");
