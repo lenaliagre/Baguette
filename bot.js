@@ -25,6 +25,9 @@ client.on('message', msg => {
 	else if (command === 'stab') {
 		msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 	}
+	else if (command === 'eat') {
+		msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
+	}
 	else if (command === 'duckymomo') {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
 	}
