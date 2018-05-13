@@ -47,7 +47,7 @@ client.on('message', msg => {
 		msg.channel.send("", {file:"https://i.pinimg.com/originals/87/b5/50/87b55088247f99d5766ef6179ecdcceb.gif"});
 	}
 	else if (command === 'coffee')
-		msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"));
+		msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"});
 	}
 	else if (command === 'cuddle') {
 		msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
