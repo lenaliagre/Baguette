@@ -66,31 +66,6 @@ client.on('message', msg => {
         	msg.channel.send(random.select('8ball'));
     	}
 	}
-	if (pref === config.prefix) {
-        if (command === 'enable') {
-            if (botstatus === false) {
-                botstatus = true;
-                msg.channel.send('Baguette-tastic is now **enabled**');
-        else if (botstatus === true) {
-                msg.channel.send('Baguette-tastic is already **enabled**');
-            } else {
-                return;
-            }
-        else if (command === 'disable') {
-            if (botstatus === true) {
-                botstatus = false;
-                msg.channel.send('Baguette-tastic is now **diabled**');
-            } else if (botstatus === false) {
-                msg.channel.send('Baguette-tastic is already **disabled**');
-        else {
-                return;
-            }
-        } else if (command === 'status') {
-            if (botstatus === true) {
-                msg.channel.send('Baguette-tastic is currently: **enabled**');
-            } else if (botstatus === false) {
-                msg.channel.send('Baguette-tastic is currently: **disabled**');
-        }
 	else {
 		return;
 	}
