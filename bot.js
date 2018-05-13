@@ -43,6 +43,12 @@ client.on('message', msg => {
 	else if (command === 'slap') {
 		msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 	}
+	else if (command === 'hug') {
+		msg.channel.send("", {file:"https://i.pinimg.com/originals/87/b5/50/87b55088247f99d5766ef6179ecdcceb.gif"});
+	}
+	else if (command === 'cuddle') {
+		msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
+	}
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send("You need to ask a question!");
