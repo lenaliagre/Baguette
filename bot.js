@@ -40,6 +40,9 @@ client.on('message', msg => {
 	else if (command === 'tableflip') {
 		msg.channel.send("", {file:"https://i.imgur.com/4lCNxmh.gif"});
 	}
+	else if (command === 'slap') {
+		msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
+	}
 	else if (command === '8ball') {
 		if (typeof args[0] === 'undefined') {
 			msg.channel.send("You need to ask a question!");
