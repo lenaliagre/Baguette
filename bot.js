@@ -22,9 +22,6 @@ client.on('message', msg => {
 	else if (command === 'lenny') {
 		msg.channel.send(random.select('lenny'));
 	}
-	else if (command === 'test') {
-		msg.channel.send(random.select('test'));
-	}
 	else if (command === 'stab') {
 		msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 	}
