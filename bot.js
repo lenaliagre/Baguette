@@ -1,16 +1,8 @@
 const Discord = require('discord.js');
 const config = require("./config.json");
 const random = require("./random.js");
-const Music = require('discord.js-musicbot-addon');
 
 require('events').EventEmitter.defaultMaxListeners = Infinity;
-
-const music = new Music(client, {
-	youtubeKey: process.env.ytapikey, //Youtube Dev API3 Key
-	prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', defVolume: 100, anyoneCanSkip: true, messageHelp: true,
-	botOwner: '352384456977285130', helpCmd: 'assist', playCmd: 'play',	skipCmd: 'skip', queueCmd: 'queue',
-	pauseCmd: 'pause', resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set',
-	loopCmd: 'loop', searchCmd: 'search', ownerCmd: 'owner', enableQueueStat: true});
 
 const client = new Discord.Client();
 
@@ -32,6 +24,7 @@ client.on('message', msg => {
 	}
 	else if (command === 'test') {
 		msg.channel.send(random.select('test'));
+	}
 	else if (command === 'stab') {
 		msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 	}
