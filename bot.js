@@ -1,10 +1,18 @@
 const Discord = require('discord.js');
 const config = require("./config.json");
 const random = require("./random.js");
+const Music = require('discord.js-musicbot-addon');
 
 require('events').EventEmitter.defaultMaxListeners = Infinity;
 
 const client = new Discord.Client();
+
+const music = new Music(client, {
+	youtubeKey: process.env.ytapikey, //Youtube Dev API3 Key
+	prefix: config.prefix, maxQueueSize: 100, thumbnailType: 'default', defVolume: 100, anyoneCanSkip: true, messageHelp: true,
+	botOwner: '352384456977285130', helpCmd: 'assist', playCmd: 'play',	skipCmd: 'skip', queueCmd: 'queue',
+	pauseCmd: 'pause', resumeCmd: 'resume', volumeCmd: 'vol', leaveCmd: 'leave', clearCmd: 'clear', setCmd: 'set',
+	loopCmd: 'loop', searchCmd: 'search', ownerCmd: 'owner', enableQueueStat: true});
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
