@@ -16,7 +16,7 @@ const music = new Music(client, {
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"over llama land"}});
 });
 
 client.on('message', msg => {
@@ -51,7 +51,7 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif"});
 		}
 		else if (command === 'facepalm') {
-			msg.channel.send(random.select('facepalm'));
+			msg.channel.send("",{file: random.select('facepalm')});
 		}
 		else if (command === 'shrug') {
 			msg.channel.send('¯\\_(ツ)_/¯');
@@ -66,7 +66,7 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://i.pinimg.com/originals/87/b5/50/87b55088247f99d5766ef6179ecdcceb.gif"});
 		}
 		else if (command === 'gif') {
-			msg.channel.send(random.select('gif'));
+			msg.channel.send("",{file: random.select('gif')});
 		}
 		else if (command === 'coffee') {
 			msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"});
@@ -78,7 +78,7 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
 		else if (command === 'colesprouse') {
-			msg.channel.send(random.select('colesprouse'));
+			msg.channel.send("",{file: random.select('colesprouse')});
 		}
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
