@@ -1,4 +1,4 @@
 {
   "prefix":"~",
-  "client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});"
+  client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
 }
