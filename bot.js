@@ -24,6 +24,8 @@ client.on('message', msg => {
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
 	
+client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
+	
 	if (pref === config.prefix) {
   
 		if (command === 'ping') {
