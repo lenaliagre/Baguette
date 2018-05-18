@@ -16,15 +16,13 @@ const music = new Music(client, {
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setActivity(config.defaultActivity);
+	client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
 });
 
 client.on('message', msg => {
 	const pref = msg.content.slice(0, 1);
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
-	
-client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
 	
 	if (pref === config.prefix) {
   
