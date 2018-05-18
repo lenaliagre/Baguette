@@ -1,4 +1,4 @@
 {
   "prefix":"~",
-  "defaultActivity":"with Chelsea's blanket :>"
+  "client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});"
 }
