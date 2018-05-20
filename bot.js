@@ -40,7 +40,7 @@ client.on('message', msg => {
 				.addField('__Owner__ ~','Lena#1548')
 				.addField('__Prefix__ ~',''~'')
 				.addField('__Commands__ ~', 'Ping, Help, Stab, Eat, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Cri, Punchmartin, 8ball')
-				.setColor(0x00AE86)
+				.setColor(16775069)
 			msg.channel.sendEmbed(help);
 		}
 		
