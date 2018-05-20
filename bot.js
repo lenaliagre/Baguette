@@ -121,7 +121,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'punchmartin') {
-			msg.channel.send("", {file:"http://i0.kym-cdn.com/photos/images/original/000/641/427/824.gif"});
+			msg.channel.send('@Dnami#5981, you have been punched by msg.author.toString() + "", {file:"http://i0.kym-cdn.com/photos/images/original/000/641/427/824.gif"});
 		}
 		
 		else if (command === '8ball') {
