@@ -29,9 +29,11 @@ client.on('message', msg => {
 		if (command === 'ping') {
 			msg.channel.send('Pongity Pong!');
 		}
+		
 		else if (command === 'lenny') {
 			msg.channel.send(random.select('lenny'));
 		}
+		
 		else if (command === 'help') {
   			var help = new Discord.RichEmbed()
 				.setTitle('**Helpful Information for Baguette-tastic! ^u^**')
@@ -40,63 +42,83 @@ client.on('message', msg => {
 				.setColor(0x00AE86)
 			msg.channel.sendEmbed(help);
 		}
+		
 		else if (command === 'stab') {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
+		
 		else if (command === 'eat') {
 			msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
 		}
+		
 		else if (command === 'punda') {
 			msg.channel.send('Best teacher ever! - https://i.pinimg.com/originals/b8/44/51/b844518e4262f54396470be38f183aae.gif');
 		}
+		
 		else if (command === 'drink') {
 			 msg.channel.send("", {file:"https://nerdramblesblog.files.wordpress.com/2017/01/tumblr_inline_nrul77ouju1szu3bc_500.gif"});
 		}
+		
 		else if (command === 'duckymomo') {
 			msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});	
 		}
+		
 		else if (command === 'facedesk') {
 			msg.channel.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif"});
 		}
+		
 		else if (command === 'facepalm') {
 			msg.channel.send("",{file: random.select('facepalm')});
 		}
+		
 		else if (command === 'shrug') {
 			msg.channel.send('¯\\_(ツ)_/¯');
 		}
+		
 		else if (command === 'tableflip') {
 			msg.channel.send("", {file:"https://i.imgur.com/4lCNxmh.gif"});
 		}
+		
 		else if (command === 'slap') {
 			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 		}
+		
 		else if (command === 'llama') {
 			msg.channel.send("",{file: random.select('llama')});
 		}
+		
 		else if (command === 'hug') {
 			msg.channel.send("",{file: random.select('hug')});
 		}
+		
 		else if (command === 'gif') {
 			msg.channel.send("",{file: random.select('gif')});
 		}
+		
 		else if (command === 'coffee') {
 			msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"});
 		}
+		
 		else if (command === 'tea') {
 			msg.channel.send("", {file:"https://78.media.tumblr.com/36f70582cb88d7f7fdc092574eabb76c/tumblr_oju3esp58b1uc9x1zo1_500.gif"});
 		}
+		
 		else if (command === 'cuddle') {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
+		
 		else if (command === 'colesprouse') {
 			msg.channel.send("",{file: random.select('colesprouse')});
 		}
+		
 		else if (command === 'cri') {
 			msg.command.send("",{file: random.select('cri')});
 		}
+		
 		else if (command === 'punchmartin') {
 			msg.channel.send("", {file:"http://i0.kym-cdn.com/photos/images/original/000/641/427/824.gif"});
 		}
+		
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("You need to ask a question!");
