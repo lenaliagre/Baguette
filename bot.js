@@ -83,6 +83,9 @@ client.on('message', msg => {
 		else if (command === 'colesprouse') {
 			msg.channel.send("",{file: random.select('colesprouse')});
 		}
+		else if (command === 'punchmartin') {
+			msg.channel.send("", {file:"http://i0.kym-cdn.com/photos/images/original/000/641/427/824.gif"});
+		}
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("You need to ask a question!");
