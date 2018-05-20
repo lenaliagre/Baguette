@@ -62,6 +62,9 @@ client.on('message', msg => {
 		else if (command === 'slap') {
 			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 		}
+		else if (command === 'llama') {
+			msg.channel.send("",{file: random.select('llama')});
+		}
 		else if (command === 'hug') {
 			msg.channel.send("",{file: random.select('hug')});
 		}
