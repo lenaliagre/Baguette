@@ -63,7 +63,7 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 		}
 		else if (command === 'hug') {
-			msg.channel.send("", {file:"https://i.pinimg.com/originals/87/b5/50/87b55088247f99d5766ef6179ecdcceb.gif"});
+			msg.channel.send("",{file: random.select('hug')});
 		}
 		else if (command === 'gif') {
 			msg.channel.send("",{file: random.select('gif')});
