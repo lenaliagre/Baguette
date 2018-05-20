@@ -36,7 +36,7 @@ client.on('message', msg => {
 		
 		else if (command === 'help') {
   			var help = new Discord.RichEmbed()
-				.setTitle('*sends help* ^u^')
+				.setTitle('Here is some info *sends help* ^u^ -')
 				.addField('__Owner__ ~','Lena#1548')
 				.addField('__Prefix__ ~',''~'')
 				.addField('__Commands__ ~', 'Ping, Help, Stab, Eat, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Cri, Punchmartin, 8ball')
