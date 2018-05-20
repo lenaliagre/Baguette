@@ -120,10 +120,6 @@ client.on('message', msg => {
 			msg.command.send("",{file: random.select('cri')});
 		}
 		
-		else if (command === 'punchmartin') {
-			msg.channel.send('@Dnami#5981, you have been punched by msg.author.toString() + "", {file:"http://i0.kym-cdn.com/photos/images/original/000/641/427/824.gif"});
-		}
-		
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("You need to ask a question!");
