@@ -38,7 +38,7 @@ client.on('message', msg => {
   			var help = new Discord.RichEmbed()
 				.setTitle('Helpful Information for Baguette-tastic! ^u^')
 				.addField('__Owner__ ~','Lena#1548')
-				.addField('__Prefix__','~')
+				.addField('__Prefix__ ~',''~'')
 				.addField('__Commands__ ~', 'Ping, Help, Stab, Eat, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Cri, Punchmartin, 8ball')
 				.setColor(0x00AE86)
 			msg.channel.sendEmbed(help);
