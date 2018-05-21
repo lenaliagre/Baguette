@@ -112,6 +112,10 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://78.media.tumblr.com/36f70582cb88d7f7fdc092574eabb76c/tumblr_oju3esp58b1uc9x1zo1_500.gif"});
 		}
 		
+		else if (command === 'fact') {
+			msg.channel.send(random.select('facts'));
+		}
+		
 		else if (command === 'cuddle') {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
