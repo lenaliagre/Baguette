@@ -116,6 +116,10 @@ client.on('message', msg => {
 			msg.channel.send(random.select('facts'));
 		}
 		
+		else if (command === '<@444107463709556746>') {
+			msg.channel.send('Why tf you tagging a bot? You lil retard');
+		}
+		
 		else if (command === 'cuddle') {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
