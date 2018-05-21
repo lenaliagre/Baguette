@@ -30,6 +30,12 @@ client.on('message', msg => {
 			msg.channel.send('Pongity Pong!');
 		}
 		
+client.on('message', msg => {
+    		if (msg.content.toLowerCase().includes('<@444107463709556746>') {
+        		msg.channel.send('THE HECK DO YOU WANT?');
+    			}
+		});
+		
 		else if (command === 'lenny') {
 			msg.channel.send(random.select('lenny'));
 		}
