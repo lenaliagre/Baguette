@@ -52,6 +52,10 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
 		}
 		
+		else if (command === 'yoke') {
+			msg.channel.send("", {file:"https://vignette.wikia.nocookie.net/hellokitty/images/7/77/Sanrio_Characters_Gudetama_Image004.png"});
+		}
+		
 		else if (command === 'punda') {
 			msg.channel.send('Best teacher ever! - https://i.pinimg.com/originals/b8/44/51/b844518e4262f54396470be38f183aae.gif');
 		}
