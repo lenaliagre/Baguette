@@ -126,6 +126,10 @@ client.on('message', msg => {
 		
 		else if (command === 'cri') {
 			msg.command.send("",{file: random.select('cri')});
+		}		
+		
+		else if (command === 'smack') {
+			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
 		}
 		
 		else if (command === '8ball') {
@@ -138,10 +142,6 @@ client.on('message', msg => {
 		}
 		else {
 			return;
-		}
-		
-		else if (command === 'smack') {
-			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
 		}
 	} else {
 		return;
