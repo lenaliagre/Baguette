@@ -130,7 +130,7 @@ client.on('message', msg => {
 		
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("You need to ask a question!");
+				msg.channel.send("**Incorrect Usage** - You need to ask a question!");
 				return;
 			} else {
 				msg.channel.send(random.select('8ball'));
@@ -138,6 +138,10 @@ client.on('message', msg => {
 		}
 		else {
 			return;
+		}
+		
+		else if (command === 'smack') {
+			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
 		}
 	} else {
 		return;
