@@ -39,7 +39,7 @@ client.on('message', msg => {
 				.setTitle('Here is some info! ^u^ -')
 				.addField('Owner ~','Lena#1548')
 				.addField('Prefix ~','~')
-				.addField('Commands ~', 'Ping, Help, Stab, Eat, Yoke, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Cri, 8ball')
+				.addField('Commands ~', 'Ping, Help, Stab, Eat, Yoke, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Tomholland, Cri, 8ball')
 				.setColor(0xffff97)
 			msg.channel.sendEmbed(help);
 		}
@@ -122,6 +122,10 @@ client.on('message', msg => {
 		
 		else if (command === 'colesprouse') {
 			msg.channel.send("",{file: random.select('colesprouse')});
+		}
+		
+		else if (command === 'tomholland') {
+			msg.channel.send("",{file: random.select('tomholland')});
 		}
 		
 		else if (command === 'cri') {
