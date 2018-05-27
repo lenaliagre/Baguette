@@ -16,7 +16,7 @@ const music = new Music(client, {
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Leny sleep"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"pizza burn"}});
 });
 
 client.on('message', msg => {
@@ -39,10 +39,19 @@ client.on('message', msg => {
 				.setTitle('Here is some info! ^u^ -')
 				.addField('Owner ~','Lena#1548')
 				.addField('Prefix ~','~')
-				.addField('Commands ~', 'Ping, Help, Stab, Eat, Yoke, Punda, Drink, Duckymomo, Facedesk, Facepalm, Cri, Shrug, Tableflip, Slap, Llama, Hug, Gif, Coffee, Tea, Cuddle, Colesprouse, Tomholland, Cri, 8ball')
+				.addField('Commands List ~', '~command')
 				.setColor(0xffff97)
 			msg.channel.sendEmbed(help);
 		}
+		
+		else if (command === 'command') {
+			var help = new Discord.RichEmbed()
+			.setTitle('Here is the command list for this bot! ^u^ -')
+			.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
+			.addField('Info ~', 'Help, Command')
+			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
+			.addField('Other ~', 'Yoke, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
+
 		
 		else if (command === 'stab') {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
