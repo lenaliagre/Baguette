@@ -50,7 +50,7 @@ client.on('message', msg => {
 				.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
 				.addField('Info ~', 'Help, Command')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-				.addField('Other ~', 'Yoke, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
+				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
 				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
