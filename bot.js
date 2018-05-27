@@ -40,7 +40,7 @@ client.on('message', msg => {
 				.addField('Owner ~','Lena#1548')
 				.addField('Prefix ~','~')
 				.addField('Commands List ~', '~command')
-				.setColor(0xffff97)
+				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
 		
@@ -51,7 +51,7 @@ client.on('message', msg => {
 				.addField('Info ~', 'Help, Command')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
 				.addField('Other ~', 'Yoke, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
-				.setColor(0xffff97)
+				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
 		
