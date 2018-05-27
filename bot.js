@@ -46,12 +46,14 @@ client.on('message', msg => {
 		
 		else if (command === 'command') {
 			var help = new Discord.RichEmbed()
-			.setTitle('Here is the command list for this bot! ^u^ -')
-			.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
-			.addField('Info ~', 'Help, Command')
-			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-			.addField('Other ~', 'Yoke, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
-
+				.setTitle('Here is the command list for this bot! ^u^ -')
+				.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
+				.addField('Info ~', 'Help, Command')
+				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
+				.addField('Other ~', 'Yoke, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
+				.setColor(0xffff97)
+			msg.channel.sendEmbed(help);
+		}
 		
 		else if (command === 'stab') {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
