@@ -56,6 +56,10 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'stab') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
 		
@@ -100,6 +104,10 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'slap') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 		}
 		
@@ -108,6 +116,10 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'hug') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("",{file: random.select('hug')});
 		}
 		
@@ -128,6 +140,10 @@ client.on('message', msg => {
 		} 
 		
 		else if (command === 'cuddle') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
 		
@@ -144,6 +160,10 @@ client.on('message', msg => {
 		}		
 		
 		else if (command === 'smack') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
 		}
 		
@@ -154,9 +174,6 @@ client.on('message', msg => {
 			} else {
 				msg.channel.send(random.select('8ball'));
 			}
-		}
-		else {
-			return;
 		}
 	} else {
 		return;
