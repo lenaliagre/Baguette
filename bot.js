@@ -62,6 +62,7 @@ client.on('message', msg => {
 			} else {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
+		}
 		
 		else if (command === 'eat') {
 			msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
@@ -110,6 +111,7 @@ client.on('message', msg => {
 			} else {
 			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
 		}
+		}
 		
 		else if (command === 'llama') {
 			msg.channel.send("",{file: random.select('llama')});
@@ -121,6 +123,7 @@ client.on('message', msg => {
 				return;
 			} else {
 			msg.channel.send("",{file: random.select('hug')});
+		}
 		}
 		
 		else if (command === 'gif') {
@@ -146,6 +149,7 @@ client.on('message', msg => {
 			} else {
 			msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
 		}
+		}
 		
 		else if (command === 'colesprouse') {
 			msg.channel.send("",{file: random.select('colesprouse')});
@@ -165,6 +169,7 @@ client.on('message', msg => {
 				return;
 			} else {
 			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
+		}
 		}
 		
 		else if (command === '8ball') {
