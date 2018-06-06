@@ -50,7 +50,7 @@ client.on('message', msg => {
 				.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
 				.addField('Info ~', 'Help, Command')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, Fact, 8ball')
+				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball')
 				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
@@ -138,10 +138,6 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://78.media.tumblr.com/36f70582cb88d7f7fdc092574eabb76c/tumblr_oju3esp58b1uc9x1zo1_500.gif"});
 		}
 		
-		else if (command === 'fact') {
-			msg.channel.send(random.select('facts'));
-		} 
-		
 		else if (command === 'cuddle') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
@@ -178,7 +174,7 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send(random.select('8ball'));
-			}
+		}
 		}
 	} else {
 		return;
