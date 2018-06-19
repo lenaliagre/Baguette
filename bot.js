@@ -92,6 +92,10 @@ client.on('message', msg => {
 			msg.channel.send("",{file: random.select('facepalm')});
 		}
 		
+		else if (command === 'facedesk') {
+			msg.channel.send("", {file:"http://viralviralvideos.com/wp-content/uploads/GIF/2015/04/Oh-okay-lemme-kill-myself-then-GIF.gif")});
+		}
+		
 		else if (command === 'cri') {
 			msg.channel.send("",{file: random.select('cri')});
 		}
