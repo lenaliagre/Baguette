@@ -91,11 +91,15 @@ client.on('message', msg => {
 		else if (command === 'facepalm') {
 			msg.channel.send("",{file: random.select('facepalm')});
 		}
-		
-		else if (command === 'facedesk') {
+		else if (command === 'neck') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
 			msg.channel.send("", {file:"http://viralviralvideos.com/wp-content/uploads/GIF/2015/04/Oh-okay-lemme-kill-myself-then-GIF.gif")});
 		}
-		
+		}
+			
 		else if (command === 'cri') {
 			msg.channel.send("",{file: random.select('cri')});
 		}
