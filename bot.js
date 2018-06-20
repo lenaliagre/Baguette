@@ -47,7 +47,7 @@ client.on('message', msg => {
 		else if (command === 'command') {
 			var help = new Discord.RichEmbed()
 				.setTitle('Here is the command list for this bot! ^u^ -')
-				.addField('Actions ~', 'Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
+				.addField('Actions ~', 'Stab, Neck, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
 				.addField('Info ~', 'Help, Command')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
 				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball')
