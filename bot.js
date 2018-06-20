@@ -96,7 +96,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
 				return;
 			} else {
-			msg.channel.send("", {file:"http://viralviralvideos.com/wp-content/uploads/GIF/2015/04/Oh-okay-lemme-kill-myself-then-GIF.gif")});
+			msg.channel.send("", {file:"http://viralviralvideos.com/wp-content/uploads/GIF/2015/04/Oh-okay-lemme-kill-myself-then-GIF.gif"});
 		}
 		}
 			
