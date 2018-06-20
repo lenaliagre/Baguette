@@ -49,7 +49,7 @@ client.on('message', msg => {
 			var help = new Discord.RichEmbed()
 				.setTitle('Here is the command list for this bot! ^u^ -')
 				.addField('Actions ~', 'Stab, Neck, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
-				.addField('Info ~', 'Help, Command')
+				.addField('Info ~', 'Help, Command, Invite')
 			        .addField('Music ~', 'Play, Skip, Pause, Resume, Leave, Loop, Queue')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
 				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball')
