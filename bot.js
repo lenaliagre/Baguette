@@ -40,6 +40,7 @@ client.on('message', msg => {
 				.addField('Owner ~','Lena#1548')
 				.addField('Prefix ~','~')
 				.addField('Commands List ~', '~command')
+			        .addField('Invite This Bot ~', '~invite')
 				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
@@ -63,6 +64,10 @@ client.on('message', msg => {
 			} else {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
+		}
+		
+		else if (command === 'invite') {
+			msg.channel.send('https://discordapp.com/oauth2/authorize?client_id=444107463709556746&scope=bot');
 		}
 		
 		else if (command === 'eat') {
