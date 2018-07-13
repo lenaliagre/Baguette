@@ -123,7 +123,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
 				return;
 			} else {
-			msg.channel.send("", {file:"https://i.imgur.com/4MQkDKm.gif"});
+			msg.channel.send("",{file: random.select('slap')});
 		}
 		}
 		
