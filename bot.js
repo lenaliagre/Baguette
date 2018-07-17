@@ -82,6 +82,10 @@ client.on('message', msg => {
 			msg.channel.send('Best teacher ever! - https://i.pinimg.com/originals/b8/44/51/b844518e4262f54396470be38f183aae.gif');
 		}
 		
+		else if (command === 'pomegranates') {
+			msg.channel.send('https://www.youtube.com/watch?v=OlI8r3nNUVw');
+		}
+		
 		else if (command === 'drink') {
 			 msg.channel.send("", {file:"https://nerdramblesblog.files.wordpress.com/2017/01/tumblr_inline_nrul77ouju1szu3bc_500.gif"});
 		}
