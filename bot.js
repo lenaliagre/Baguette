@@ -16,7 +16,7 @@ const music = new Music(client, {
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Lena die"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"Lena decease"}});
 });
 
 client.on('message', msg => {
