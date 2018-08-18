@@ -67,7 +67,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'pm') {
-			message.author.sendMessage("",{file: random.select'message')});
+			message.author.send("hi");
 		}
 		
 		else if (command === 'invite') {
