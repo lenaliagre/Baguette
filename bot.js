@@ -70,7 +70,7 @@ client.on('message', msg => {
 		
 		mention = message.mentions.users.first();
 		
-		else if (message.startsWith (prefix + "msg")) {
+		else if (msg.startsWith (prefix + "msg")) {
 			if mention == null) { return; }
 			message.delete();
 			mentionMessage = message.mention.slice (8);
