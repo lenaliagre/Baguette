@@ -67,12 +67,14 @@ client.on('message', msg => {
 		}
 			
 client.on ("message", (message) => {
+		
+		msg = message.content.toLowerCase();
 	
 		if (message.author.bot) return;
 		
 		mention = message.mentions.users.first();
 		
-		else if (msg.startsWith (prefix + "msg")) {
+		if (msg.startsWith (prefix + "msg")) {
 			if mention == null) { return; }
 			message.delete();
 			mentionMessage = message.mention.slice (8);
