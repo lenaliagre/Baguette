@@ -65,6 +65,10 @@ client.on('message', msg => {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
 		}
+	} else {
+		return;
+	}
+});
 
 client.on ("message", (message) => {
 
@@ -199,7 +203,7 @@ client.on ("message", (message) => {
 				return;
 			} else {
 			msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
-		}
+			}
 		}
 
 		else if (command === '8ball') {
@@ -208,11 +212,12 @@ client.on ("message", (message) => {
 				return;
 			} else {
 				msg.channel.send(random.select('8ball'));
+			}
 		}
+
+		else {
+			return;
 		}
-	} else {
-		return;
-	}
-});
+	});
 
 client.login(process.env.token);
