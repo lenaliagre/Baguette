@@ -66,8 +66,16 @@ client.on('message', msg => {
 		}
 		}
 		
-		else if (command === 'pm') {
-			message.author.send("hi");
+		if (message.author.bot) return;
+		
+		mention = message.mentions.users.first();
+		
+		else if (message.startsWith (prefix + "send")) {
+			if mention == null) { return; }
+			message.delete();
+			mentionMessage = message.mention.slice (8);
+			mention.sendMessage (mentionMessage);
+			message.channel.send ("The pm has been sent!")
 		}
 		
 		else if (command === 'invite') {
