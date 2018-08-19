@@ -23,9 +23,7 @@ client.on('message', msg => {
 	const pref = msg.content.slice(0, 1);
 	const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
 	const command = args.shift().toLowerCase();
-	
-client.on ("message", (message) => {
-	
+
 	if (pref === config.prefix) {
   
 		if (command === 'ping') {
@@ -67,7 +65,9 @@ client.on ("message", (message) => {
 			msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
 		}
 		}
-		
+			
+client.on ("message", (message) => {
+	
 		if (message.author.bot) return;
 		
 		mention = message.mentions.users.first();
