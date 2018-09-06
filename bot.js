@@ -16,7 +16,7 @@ const music = new Music(client, {
 
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Lena decease"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"Lena die"}});
 });
 
 client.on('message', msg => {
@@ -52,7 +52,7 @@ client.on('message', msg => {
 				.addField('Info ~', 'Help, Command, Invite')
 			        .addField('Music ~', 'Play, Skip, Pause, Resume, Leave, Loop, Queue')
 				.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball')
+				.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball, Pomegranates')
 				.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
@@ -69,23 +69,6 @@ client.on('message', msg => {
 		return;
 	}
 });
-
-client.on ("message", (message) => {
-
-		msg = message.content.toLowerCase();
-
-		if (message.author.bot) return;
-
-		mention = message.mentions.users.first();
-
-		if (msg.startsWith (prefix + "msg")) {
-			if (mention == null) return;
-			message.delete();
-			mentionMessage = message.mention.slice (8);
-			mention.sendMessage (mentionMessage);
-			message.channel.send ("The pm has been sent!")
-		}
-
 		else if (command === 'invite') {
 			msg.channel.send('https://discordapp.com/oauth2/authorize?client_id=444107463709556746&scope=bot');
 		}
