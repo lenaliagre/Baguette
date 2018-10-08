@@ -7,7 +7,7 @@
 	"dependencies": {
 		"bufferutil": "^3.0.3",
         	"discord.js": "^11.3.2",
-        	"discord.js-musicbot-addon": "^1.10.3",
+        	"discord.js-musicbot-addon": "^12.0.6",
         	"erlpack": "github:discordapp/erlpack",
         	"ffmpeg-binaries": "^3.2.2-3",
         	"libsodium-wrappers": "^0.7.3",
