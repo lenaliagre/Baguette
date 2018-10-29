@@ -56,7 +56,7 @@ client.on('message', msg => {
 		}
 			
 		else if (command === 'greet') {
-			msg.channel.send(random.select('greet'));
+			msg.channel.send("",{file: random.select('greet')});
 		
 		}
 		
