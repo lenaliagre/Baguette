@@ -78,7 +78,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'bedtime') {
-			msg.channel.send("",{file: random.select{'bedtime')});
+			msg.channel.send("",{file: random.select('bedtime')});
 			
 		}
 		
