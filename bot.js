@@ -46,9 +46,9 @@ client.on('message', msg => {
 		else if (command === 'commands') {
 			var help = new Discord.RichEmbed()
 			.setTitle('Here is the command list for this bot! ^u^ -')
-			.addField('Actions ~', 'Wave, Stab, Neck, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
+			.addField('Actions ~', 'Wave, Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
 			.addField('Info ~', 'Help, Commands, Invite')
-			.addField('Music ~', 'Play, Skip, Pause, Resume, Leave, Loop, Queue')
+			.addField('Music ~', 'Play, Skip, Pause, Resume, Loop, Queue')
 			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
 			.addField('Other ~', 'Yoke, Lenny, Ping, Shrug, Coffee, Tea, 8ball, Pomegranates')
 			.setColor(0x94f174)
@@ -99,15 +99,7 @@ client.on('message', msg => {
 		
 		else if (command === 'facepalm') {
 			msg.channel.send("",{file: random.select('facepalm')});
-		}
 		
-		else if (command === 'neck') {
-			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
-				return;
-			} else {
-				msg.channel.send("", {file:"http://viralviralvideos.com/wp-content/uploads/GIF/2015/04/Oh-okay-lemme-kill-myself-then-GIF.gif"});
-			}
 		}
 		
 		else if (command === 'cri') {
