@@ -50,7 +50,7 @@ client.on('message', msg => {
 			.addField('Info ~', 'Help, Command, Invite')
 			.addField('Music ~', 'Play, Skip, Pause, Resume, Leave, Loop, Queue')
 			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-			.addField('Other ~', 'Yoke, Lenny, Ping, Punda, Shrug, Coffee, Tea, 8ball, Pomegranates')
+			.addField('Other ~', 'Yoke, Lenny, Ping, Shrug, Coffee, Tea, 8ball, Pomegranates')
 			.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
@@ -60,7 +60,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
 				return;
 			} else {
-				msg.channel.send("", {file:"https://i0.wp.com/blackandyellowotakugamers.com/wp-content/uploads/2017/06/ayase-stab.gif"});
+				msg.channel.send("",{file: random.select('stab')});
 			}
 		}
 		
@@ -74,10 +74,6 @@ client.on('message', msg => {
 		
 		else if (command === 'yoke') {
 			msg.channel.send("", {file:"https://vignette.wikia.nocookie.net/hellokitty/images/7/77/Sanrio_Characters_Gudetama_Image004.png"});
-		}
-		
-		else if (command === 'punda') {
-			msg.channel.send('Best teacher ever! - https://i.pinimg.com/originals/b8/44/51/b844518e4262f54396470be38f183aae.gif');
 		}
 		
 		else if (command === 'pomegranates') {
