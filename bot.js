@@ -39,7 +39,7 @@ client.on('message', msg => {
 			.addField('Prefix ~','~')
 			.addField('Commands List ~', '~Commands')
 			.addField('Invite This Bot ~', '~Invite')
-			.setColor(0x75f09d)
+			.setColor(0x94f174)
 			msg.channel.sendEmbed(help);
 		}
 		
@@ -51,7 +51,7 @@ client.on('message', msg => {
 			.addField('Music ~', 'Play, Skip, Pause, Resume, Leave, Loop, Queue')
 			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
 			.addField('Other ~', 'Yoke, Lenny, Ping, Shrug, Coffee, Tea, 8ball, Pomegranates')
-			.setColor(0x75f09d)
+			.setColor(0x94f174)
 			msg.channel.sendEmbed(help);
 		}
 			
