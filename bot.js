@@ -176,51 +176,6 @@ client.on('message', msg => {
 		else if (command === 'cri') {
 			msg.command.send("",{file: random.select('cri')});
 		}
-		
-		else if (msg.content === 'fuck'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'shit'){
-			message.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'bitch'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'ass'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'cunt'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'bullshit'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'bastard'){
-			msg.reply ('Mind your language, kid.')
-		
-		}
-		
-		else if (msg.content === 'dick'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (msg.content === 'twat'){
-			msg.reply ('Mind your language, kid.')
-			
-		}
 			
 		else if (command === 'smack') {
 			if (typeof args[0] === 'undefined') {
