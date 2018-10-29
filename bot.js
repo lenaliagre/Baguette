@@ -77,6 +77,11 @@ client.on('message', msg => {
 			msg.channel.send("",{file: random.select('eat')});
 		}
 		
+		else if (command === 'bedtime') {
+			msg.channel.send("",{file: random.select{'bedtime')});
+			
+		}
+		
 		else if (command === 'yoke') {
 			msg.channel.send("", {file:"https://vignette.wikia.nocookie.net/hellokitty/images/7/77/Sanrio_Characters_Gudetama_Image004.png"});
 		}
