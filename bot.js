@@ -177,6 +177,51 @@ client.on('message', msg => {
 			msg.command.send("",{file: random.select('cri')});
 		}
 		
+		else if (message.content === 'fuck'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'shit'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'bitch'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'ass'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'cunt'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'bullshit'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'bastard'){
+			message.reply ('Mind your language, kid.')
+		
+		}
+		
+		else if (message.content === 'dick'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (message.content === 'twat'){
+			message.reply ('Mind your language, kid.')
+			
+		}
+			
 		else if (command === 'smack') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
