@@ -54,6 +54,11 @@ client.on('message', msg => {
 			.setColor(0xffb295)
 			msg.channel.sendEmbed(help);
 		}
+			
+		else if (command === 'greet') {
+			msg.channel.send(random.select('greet'));
+		
+		}
 		
 		else if (command === 'stab') {
 			if (typeof args[0] === 'undefined') {
