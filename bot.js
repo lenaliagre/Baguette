@@ -177,48 +177,48 @@ client.on('message', msg => {
 			msg.command.send("",{file: random.select('cri')});
 		}
 		
-		else if (message.content === 'fuck'){
+		else if (msg.content === 'fuck'){
+			msg.reply ('Mind your language, kid.')
+			
+		}
+		
+		else if (msg.content === 'shit'){
 			message.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'shit'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'bitch'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'bitch'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'ass'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'ass'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'cunt'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'cunt'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'bullshit'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'bullshit'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'bastard'){
+			msg.reply ('Mind your language, kid.')
+		
+		}
+		
+		else if (msg.content === 'dick'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 		
-		else if (message.content === 'bastard'){
-			message.reply ('Mind your language, kid.')
-		
-		}
-		
-		else if (message.content === 'dick'){
-			message.reply ('Mind your language, kid.')
-			
-		}
-		
-		else if (message.content === 'twat'){
-			message.reply ('Mind your language, kid.')
+		else if (msg.content === 'twat'){
+			msg.reply ('Mind your language, kid.')
 			
 		}
 			
