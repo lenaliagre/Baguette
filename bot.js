@@ -69,7 +69,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'eat') {
-			msg.channel.send("", {file:"https://media.giphy.com/media/8XUZ0XauUBnoY/giphy.gif"});
+			msg.channel.send("",{file: random.select('eat')});
 		}
 		
 		else if (command === 'yoke') {
