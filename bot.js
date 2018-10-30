@@ -154,7 +154,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
 				return;
 			} else {
-				msg.channel.send("", {file:"https://m.popkey.co/32edb3/zE7XE.gif"});
+				msg.channel.send("",{file: random.select('cuddle')});
 			}
 		}
 		
