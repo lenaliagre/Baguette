@@ -14,7 +14,7 @@ Music.start(client, {
 	
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Lena sleep o-o"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
 });
 
 client.on('message', msg => {
