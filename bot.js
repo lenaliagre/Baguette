@@ -73,6 +73,11 @@ client.on('message', msg => {
 			msg.channel.send('https://discordapp.com/oauth2/authorize?client_id=444107463709556746&scope=bot');
 		}
 		
+		else if(msg.content() === 'hey')
+			msg.channel.send('Hey! ^-^' + msg.author)
+		
+		}
+		
 		else if (command === 'eat') {
 			msg.channel.send("",{file: random.select('eat')});
 			
