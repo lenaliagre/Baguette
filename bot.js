@@ -31,13 +31,6 @@ client.on('message', msg => {
 		else if (command === 'lenny') {
 			msg.channel.send(random.select('lenny'));
 		}
-	
-		client.on('guildMemberAdd', member => {
-			const channel = member.guild.channels.find(ch => ch.name === 'member-log');
-			if (~channel) return;
-			channel.send('Heyy! Welcome to the server, ${member}');
-			
-		});
 		
 		else if (command === 'help') {
 			var help = new Discord.RichEmbed()
