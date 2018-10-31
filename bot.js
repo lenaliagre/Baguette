@@ -31,6 +31,13 @@ client.on('message', msg => {
 		else if (command === 'lenny') {
 			msg.channel.send(random.select('lenny'));
 		}
+	
+		client.on('guildMemberAdd', member => {
+			const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+			if (~channel) return;
+			channel.send(`Welcome to the server, ${member}`);
+			
+		});
 		
 		else if (command === 'help') {
 			var help = new Discord.RichEmbed()
@@ -71,11 +78,6 @@ client.on('message', msg => {
 		
 		else if (command === 'invite') {
 			msg.channel.send('https://discordapp.com/oauth2/authorize?client_id=444107463709556746&scope=bot');
-		}
-		
-		else if(msg.content() === 'hey')
-			msg.channel.send('Hey! ^-^' + msg.author)
-		
 		}
 		
 		else if (command === 'eat') {
