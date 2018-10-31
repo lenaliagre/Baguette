@@ -1,1 +1,1 @@
-# BaguetteBaker
+# Baguette-tastic
