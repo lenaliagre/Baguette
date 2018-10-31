@@ -46,7 +46,7 @@ client.on('message', msg => {
 		else if (command === 'commands') {
 			var help = new Discord.RichEmbed()
 			.setTitle('Here is the command list for this bot! ^u^ -')
-			.addField('Actions ~', 'Wave, Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Tableflip, Slap, Cuddle, Smack')
+			.addField('Actions ~', 'Wave, Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Highfive, Tableflip, Slap, Cuddle, Smack')
 			.addField('Info ~', 'Help, Commands, Invite')
 			.addField('Music ~', 'Play, Skip, Pause, Resume, Loop, Queue')
 			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
@@ -87,7 +87,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'drink') {
-			msg.channel.send("", {file:"https://nerdramblesblog.files.wordpress.com/2017/01/tumblr_inline_nrul77ouju1szu3bc_500.gif"});
+			msg.channel.send("",{file: random.select('drink')});
 		}
 		
 		else if (command === 'duckymomo') {
@@ -95,12 +95,21 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'facedesk') {
-			msg.channel.send("", {file:"https://media1.tenor.com/images/9d30a11e7978ea3b404d5e48c5966c6b/tenor.gif"});
+			msg.channel.send("",{file: random.select('facedesk')});
 		}
 		
 		else if (command === 'facepalm') {
 			msg.channel.send("",{file: random.select('facepalm')});
 		
+		}
+		
+		else if (command === 'highfive') {
+			if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				return;
+			} else {
+				msg.channel.send("",{file: random.select('highfive')});
+			}
 		}
 		
 		else if (command === 'cri') {
@@ -112,7 +121,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'tableflip') {
-			msg.channel.send("", {file:"https://i.imgur.com/4lCNxmh.gif"});
+			msg.channel.send("",{file: random.select('tableflip')});
 		}
 		
 		else if (command === 'slap') {
@@ -142,11 +151,11 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'coffee') {
-			msg.channel.send("", {file:"https://i.gifer.com/73Il.gif"});
+			msg.channel.send("",{file: random.select('coffee')});
 		}
 		
 		else if (command === 'tea') {
-			msg.channel.send("", {file:"https://78.media.tumblr.com/36f70582cb88d7f7fdc092574eabb76c/tumblr_oju3esp58b1uc9x1zo1_500.gif"});
+			msg.channel.send("",{file: random.select('tea')});
 		}
 		
 		else if (command === 'cuddle') {
