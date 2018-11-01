@@ -58,7 +58,7 @@ client.on('message', msg => {
 			
 		else if (command === 'wave') {
 				if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You weirdo, don't wave to yourself!");
+				msg.channel.send("**Incorrect Usage** - You weirdo, don't wave to yourself! Tag someone!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('wave')});
@@ -68,7 +68,7 @@ client.on('message', msg => {
 		
 		else if (command === 'stab') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - No, just no! You shouldn't be stabbing yourself!");
+				msg.channel.send("**Incorrect Usage** - No, just no! You shouldn't be stabbing yourself! Tag someone!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('stab')});
@@ -118,7 +118,7 @@ client.on('message', msg => {
 		
 		else if (command === 'highfive') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You loner, you can't highfive yourself, go get friends!");
+				msg.channel.send("**Incorrect Usage** - You loner, you can't highfive yourself, go get friends! Tag someone!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('highfive')});
@@ -143,7 +143,7 @@ client.on('message', msg => {
 		
 		else if (command === 'slap') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - Oh dear, you shouldn't slap yourself!");
+				msg.channel.send("**Incorrect Usage** - Oh dear, you shouldn't slap yourself! Tag someone!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('slap')});
@@ -157,7 +157,7 @@ client.on('message', msg => {
 		
 		else if (command === 'hug') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You can't hug yourself, weirdo!");
+				msg.channel.send("**Incorrect Usage** - You can't hug yourself, weirdo! Tag someone!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('hug')});
@@ -182,7 +182,7 @@ client.on('message', msg => {
 		
 		else if (command === 'cuddle') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You can't cuddle with yourself, that's just weird!");
+				msg.channel.send("**Incorrect Usage** - You can't cuddle with yourself, that's just weird! Tag someone");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('cuddle')});
@@ -207,7 +207,7 @@ client.on('message', msg => {
 			
 		else if (command === 'smack') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - Ouch! You shouldm't smack yourself!");
+				msg.channel.send("**Incorrect Usage** - Ouch! You shouldm't smack yourself! Tag someone");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('smack')});
@@ -217,7 +217,7 @@ client.on('message', msg => {
 		
 		else if (command === '8ball') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to ask a question!");
+				msg.channel.send("**Incorrect Usage** - You need to ask a question, ya silly goose!");
 				return;
 			} else {
 				msg.channel.send(random.select('8ball'));
