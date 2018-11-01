@@ -210,7 +210,8 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - Ouch! You shouldm't smack yourself!");
 				return;
 			} else {
-				msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
+				msg.channel.send("",{file: random.select('smack')});
+			
 			}
 		}
 		
