@@ -14,7 +14,7 @@ Music.start(client, {
 	
 client.on('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setPresence({game:{type: "WATCHING", name:"Lena ride a llama"}});
+	client.user.setPresence({game:{type: "WATCHING", name:"Netflix and Chillin' with Lena :>"}});
 });
 
 client.on('message', msg => {
@@ -56,21 +56,28 @@ client.on('message', msg => {
 		}
 			
 		else if (command === 'wave') {
-			msg.channel.send("",{file: random.select('wave')});
-		
+				if (typeof args[0] === 'undefined') {
+				msg.channel.send("**Incorrect Usage** - You weirdo, don't wave to yourself!");
+				return;
+			} else {
+				msg.channel.send("",{file: random.select('wave')});
+			
+			}
 		}
 		
 		else if (command === 'stab') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - No, just no! You shouldn't be stabbing yourself!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('stab')});
+			
 			}
 		}
 		
 		else if (command === 'invite') {
 			msg.channel.send('https://discordapp.com/oauth2/authorize?client_id=444107463709556746&scope=bot');
+			
 		}
 		
 		else if (command === 'eat') {
@@ -80,22 +87,27 @@ client.on('message', msg => {
 		
 		else if (command === 'yoke') {
 			msg.channel.send("", {file:"https://vignette.wikia.nocookie.net/hellokitty/images/7/77/Sanrio_Characters_Gudetama_Image004.png"});
+		
 		}
 		
 		else if (command === 'pomegranates') {
 			msg.channel.send('https://www.youtube.com/watch?v=OlI8r3nNUVw');
+		
 		}
 		
 		else if (command === 'drink') {
 			msg.channel.send("",{file: random.select('drink')});
+		
 		}
 		
 		else if (command === 'duckymomo') {
 			msg.channel.send("", {file:"https://i.pinimg.com/originals/aa/c9/d2/aac9d28cdac664c4916256010bd19127.gif"});
+		
 		}
 		
 		else if (command === 'facedesk') {
 			msg.channel.send("",{file: random.select('facedesk')});
+		
 		}
 		
 		else if (command === 'facepalm') {
@@ -105,10 +117,11 @@ client.on('message', msg => {
 		
 		else if (command === 'highfive') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - You loner, you can't highfive yourself, go get friends!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('highfive')});
+			
 			}
 		}
 		
@@ -126,7 +139,7 @@ client.on('message', msg => {
 		
 		else if (command === 'slap') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - Oh dear, you shouldn't slap yourself!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('slap')});
@@ -139,7 +152,7 @@ client.on('message', msg => {
 		
 		else if (command === 'hug') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - You can't hug yourself, weirdo!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('hug')});
@@ -160,7 +173,7 @@ client.on('message', msg => {
 		
 		else if (command === 'cuddle') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - You can't cuddle with yourself, that's just weird!");
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('cuddle')});
@@ -181,7 +194,7 @@ client.on('message', msg => {
 			
 		else if (command === 'smack') {
 			if (typeof args[0] === 'undefined') {
-				msg.channel.send("**Incorrect Usage** - You need to tag a user!");
+				msg.channel.send("**Incorrect Usage** - Ouch! You shouldm't smack yourself!");
 				return;
 			} else {
 				msg.channel.send("", {file:"https://i.gifer.com/B2Sp.gif"});
