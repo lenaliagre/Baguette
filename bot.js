@@ -46,13 +46,14 @@ client.on('message', msg => {
 		else if (command === 'commands') {
 			var help = new Discord.RichEmbed()
 			.setTitle('Here is the command list for this bot! ^u^ -')
-			.addField('Actions ~', 'Wave, Stab, Eat, Drink, Hug, Facepalm, Facedesk, Cri, Highfive, Tableflip, Slap, Cuddle, Smack')
-			.addField('Info ~', 'Help, Commands, Invite')
-			.addField('Music ~', 'Play, Skip, Pause, Resume, Loop, Queue')
-			.addField('Gifs ~', 'Colesprouse, Tomholland, Duckymomo, Llama, Gif')
-			.addField('Other ~', 'Yoke, Lenny, Ping, Shrug, Coffee, Tea, 8ball, Pomegranates')
+			.addField('Info ~', 'Commands, Help, Invite')
+			.addField('Actions ~', 'Cri, Cuddle, Drink, Eat, Facedesk, Facepalm, Highfive, Hug, Slap, Smack, Stab, Tableflip, Wave')
+			.addField('Music ~', 'Loop, Pause, Play, Queue, Resume, Skip')
+			.addField('Gifs ~', 'Colesprouse, Duckymomo, Gif, Llama, Tomholland')
+			.addField('Other ~', '8ball, Coffee, Lenny, Ping, Pomegranates, Shrug, Tea, Yoke')
 			.setColor(0x94f174)
 			msg.channel.sendEmbed(help);
+			
 		}
 			
 		else if (command === 'wave') {
@@ -127,14 +128,17 @@ client.on('message', msg => {
 		
 		else if (command === 'cri') {
 			msg.channel.send("",{file: random.select('cri')});
+		
 		}
 		
 		else if (command === 'shrug') {
 			msg.channel.send('¯\\_(ツ)_/¯');
+		
 		}
 		
 		else if (command === 'tableflip') {
 			msg.channel.send("",{file: random.select('tableflip')});
+		
 		}
 		
 		else if (command === 'slap') {
@@ -143,6 +147,7 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('slap')});
+			
 			}
 		}
 		
@@ -156,19 +161,23 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('hug')});
+			
 			}
 		}
 		
 		else if (command === 'gif') {
 			msg.channel.send("",{file: random.select('gif')});
+		
 		}
 		
 		else if (command === 'coffee') {
 			msg.channel.send("",{file: random.select('coffee')});
+		
 		}
 		
 		else if (command === 'tea') {
 			msg.channel.send("",{file: random.select('tea')});
+		
 		}
 		
 		else if (command === 'cuddle') {
@@ -177,19 +186,23 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send("",{file: random.select('cuddle')});
+			
 			}
 		}
 		
 		else if (command === 'colesprouse') {
 			msg.channel.send("",{file: random.select('colesprouse')});
+		
 		}
 		
 		else if (command === 'tomholland') {
 			msg.channel.send("",{file: random.select('tomholland')});
+		
 		}
 		
 		else if (command === 'cri') {
 			msg.command.send("",{file: random.select('cri')});
+		
 		}
 			
 		else if (command === 'smack') {
@@ -207,6 +220,7 @@ client.on('message', msg => {
 				return;
 			} else {
 				msg.channel.send(random.select('8ball'));
+			
 			}
 		}
 		
