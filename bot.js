@@ -66,6 +66,11 @@ client.on('message', msg => {
 			}
 		}
 		
+		else if (command === 'facephone') {
+			msg.channel.send("",{file: random.select('facephone')});
+			
+		}
+		
 		else if (command === 'stab') {
 			if (typeof args[0] === 'undefined') {
 				msg.channel.send("**Incorrect Usage** - No, just no! You shouldn't be stabbing yourself! Tag someone!");
