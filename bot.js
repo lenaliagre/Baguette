@@ -61,13 +61,13 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You weirdo, don't wave to yourself! Tag someone!");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('wave')});
+				msg.channel.send("",{file: random.select('./Random Responses/wave')});
 			
 			}
 		}
 		
 		else if (command === 'facephone') {
-			msg.channel.send("",{file: random.select('facephone')});
+			msg.channel.send("",{file: random.select('./Random Responses/facephone')});
 			
 		}
 		
@@ -76,7 +76,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - No, just no! You shouldn't be stabbing yourself! Tag someone!");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('stab')});
+				msg.channel.send("",{file: random.select('./Random Responses/stab')});
 			
 			}
 		}
@@ -87,7 +87,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'eat') {
-			msg.channel.send("",{file: random.select('eat')});
+			msg.channel.send("",{file: random.select('./Random Responses/eat')});
 			
 		}
 		
@@ -102,7 +102,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'drink') {
-			msg.channel.send("",{file: random.select('drink')});
+			msg.channel.send("",{file: random.select('./Random Responses/drink')});
 		
 		}
 		
@@ -112,12 +112,12 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'facedesk') {
-			msg.channel.send("",{file: random.select('facedesk')});
+			msg.channel.send("",{file: random.select('./Random Responses/facedesk')});
 		
 		}
 		
 		else if (command === 'facepalm') {
-			msg.channel.send("",{file: random.select('facepalm')});
+			msg.channel.send("",{file: random.select('./Random Responses/facepalm')});
 		
 		}
 		
@@ -126,13 +126,13 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You loner, you can't highfive yourself, go get friends! Tag someone!");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('highfive')});
+				msg.channel.send("",{file: random.select('./Random Responses/highfive')});
 			
 			}
 		}
 		
 		else if (command === 'cri') {
-			msg.channel.send("",{file: random.select('cri')});
+			msg.channel.send("",{file: random.select('./Random Responses/cri')});
 		
 		}
 		
@@ -142,7 +142,7 @@ client.on('message', msg => {
 		}
 		
 		else if (command === 'tableflip') {
-			msg.channel.send("",{file: random.select('tableflip')});
+			msg.channel.send("",{file: random.select('./Random Responses/tableflip')});
 		
 		}
 		
@@ -151,13 +151,13 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - Oh dear, you shouldn't slap yourself! Tag someone!");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('slap')});
+				msg.channel.send("",{file: random.select('./Random Responses/slap')});
 			
 			}
 		}
 		
 		else if (command === 'llama') {
-			msg.channel.send("",{file: random.select('llama')});
+			msg.channel.send("",{file: random.select('./Random Responses/llama')});
 		}
 		
 		else if (command === 'hug') {
@@ -165,23 +165,23 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You can't hug yourself, weirdo! Tag someone!");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('hug')});
+				msg.channel.send("",{file: random.select('./Random Responses/hug')});
 			
 			}
 		}
 		
 		else if (command === 'gif') {
-			msg.channel.send("",{file: random.select('gif')});
+			msg.channel.send("",{file: random.select('./Random Responses/gif')});
 		
 		}
 		
 		else if (command === 'coffee') {
-			msg.channel.send("",{file: random.select('coffee')});
+			msg.channel.send("",{file: random.select('./Random Responses/coffee')});
 		
 		}
 		
 		else if (command === 'tea') {
-			msg.channel.send("",{file: random.select('tea')});
+			msg.channel.send("",{file: random.select('./Random Responses/tea')});
 		
 		}
 		
@@ -190,23 +190,23 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - You can't cuddle with yourself, that's just weird! Tag someone");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('cuddle')});
+				msg.channel.send("",{file: random.select('./Random Responses/cuddle')});
 			
 			}
 		}
 		
 		else if (command === 'colesprouse') {
-			msg.channel.send("",{file: random.select('colesprouse')});
+			msg.channel.send("",{file: random.select('./Random Responses/colesprouse')});
 		
 		}
 		
 		else if (command === 'tomholland') {
-			msg.channel.send("",{file: random.select('tomholland')});
+			msg.channel.send("",{file: random.select('./Random Responses/tomholland')});
 		
 		}
 		
 		else if (command === 'cri') {
-			msg.command.send("",{file: random.select('cri')});
+			msg.command.send("",{file: random.select('./Random Responses/cri')});
 		
 		}
 			
@@ -215,7 +215,7 @@ client.on('message', msg => {
 				msg.channel.send("**Incorrect Usage** - Ouch! You shouldm't smack yourself! Tag someone");
 				return;
 			} else {
-				msg.channel.send("",{file: random.select('smack')});
+				msg.channel.send("",{file: random.select('./Random Responses/smack')});
 			
 			}
 		}
